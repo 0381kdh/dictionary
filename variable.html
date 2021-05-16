@@ -1,0 +1,153 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>변수</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="css/main.css" />
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Main -->
+					<div id="main">
+						<div class="inner">
+
+							<!-- Header -->
+								<header id="header">
+									<a href="index.html" class="logo">C언어 문법 및 단어 사전</a>
+									
+								</header>
+
+							<!-- Content -->
+								<section>
+									<header class="main">
+										<h1>변수</h1>
+									</header>
+
+									<p>변수(variable)란 데이터(data)를 저장하기 위해 프로그램에 의해 이름을 할당받은 메모리 공간을 의미합니다.
+									<br>즉, 변수란 데이터(data)를 저장할 수 있는 메모리 공간을 의미하며, 이렇게 저장된 값은 변경될 수 있습니다.
+									
+									
+									<br><br>C언어에서 숫자 표현에 관련된 변수는 정수형 변수와 실수형 변수로 구분할 수 있습니다.
+									<br>또다시 정수형 변수는 char형, int형, long형 변수로, 실수형 변수는 float형, double형 변수로 나눌 수 있습니다.
+										
+										 
+									<br><br>또한, 데이터가 저장된 메모리의 주소를 저장하고 처리하는 포인터 변수가 있습니다.
+									<br>관련된 정보를 한 번에 묶어서 처리하는 사용자 정의 구조체 변수도 있습니다.
+									<br><br>
+									</p>
+
+									<hr class="major" />
+
+									<br><br>
+									<h2>변수의 이름 생성 규칙</h2>
+									<br>
+									<p>C언어에서는 변수의 이름을 비교적 자유롭게 지을 수 있습니다.
+									<br>하지만 변수의 이름은 해당 변수에 저장될 데이터의 의미를 잘 나타내도록 짓는 것이 가장 좋습니다.
+										
+										 
+									<br><br>C언어에서 변수의 이름을 생성할 때에 반드시 지켜야 하는 규칙은 다음과 같습니다.
+										
+									<br><br>1. 변수의 이름은 영문자(대소문자), 숫자, 언더스코어(_)로만 구성됩니다.
+									<br>2. 변수의 이름은 숫자로 시작될 수 없습니다.
+									<br>3. 변수의 이름 사이에는 공백을 포함할 수 없습니다.
+									<br>4. 변수의 이름으로 C언어에서 미리 정의된 키워드(keyword)는 사용할 수 없습니다.
+									<br><br>
+									</p>
+
+									<hr class="major" />
+
+									<br><br>
+									<h2>비트(bit)와 바이트(byte)</h2>
+									<br>
+									<p>컴퓨터는 모든 데이터를 2진수로 표현하고 처리합니다.
+									<br>비트(bit)란 컴퓨터가 데이터를 처리하기 위해 사용하는 데이터의 최소 단위입니다.
+									<br>이러한 비트에는 2진수의 값(0과 1)을 단 하나만 저장할 수 있습니다.
+									<br>바이트(byte)란 위와 같은 비트가 8개 모여서 구성되며, 한 문자를 표현할 수 있는 최소 단위입니다.
+									<br><br>
+									</p>
+
+									<hr class="major" />
+
+									<br><br>
+									<h2>변수와 메모리 구조</h2>
+									<br>
+									<p>변수는 기본적으로 메모리의 주소(address)를 기억하는 역할을 합니다.
+									<br>메모리 주소란 물리적인 메모리 공간을 서로 구분하기 위해 사용되는 일종의 식별자입니다.
+									<br>즉, 메모리 주소란 메모리 공간에서의 정확한 위치를 식별하기 위한 고유 주소를 의미합니다.
+										
+									
+									<br><br>변수를 참조할 때는 메모리의 주소를 참조하는 것이 아닌, 해당 주소에 저장된 데이터를 참조하게 됩니다.
+									<br>따라서 변수는 데이터가 저장된 메모리의 주소뿐만 아니라, 저장된 데이터의 길이와 형태에 관한 정보도 같이 기억해야 합니다.
+									<br><br>
+									</p>
+
+									<hr class="major" />
+
+									<br><br>
+									<h2>변수의 선언</h2>
+									<br>
+									<p>C언어에서는 변수를 사용하기 전에 반드시 먼저 해당 변수를 저장하기 위한 메모리 공간을 할당받아야 합니다.
+									<br>이렇게 해당 변수만을 위한 메모리 공간을 할당받는 행위를 변수의 선언이라고 부릅니다.
+									<br>만약 선언되지 않은 변수를 사용하려고 하면, C 컴파일러는 오류를 발생시킵니다.
+									<br><br>
+									</p>
+
+									<hr class="major" />
+
+								</section>
+						</div>
+					</div>
+
+				<!-- Sidebar -->
+				<div id="sidebar">
+					<div class="inner">
+
+						<!-- Search -->
+							<section id="search" class="alt">
+								<form method="post" action="#">
+									<input type="text" name="query" id="query" placeholder="Search" />
+								</form>
+							</section>
+
+						<!-- Menu -->
+						<nav id="menu">
+							<header class="major">
+								<h2>메뉴</h2>
+							</header>
+							<ul>
+								<li><a href="index.html">홈</a></li>
+								<li><a href="variable.html">변수</a></li>
+								<li><a href="operator.html">연산자</a></li>
+								<li><a href="control.html">제어문</a></li>
+								<li><a href="function.html">함수</a></li>
+								<li><a href="string.html">문자열</a></li>
+							</ul>
+						</nav>
+
+					<!-- Section -->
+						<section>
+							<header class="major">
+								<h2>개발자 연락처</h2>
+							</header>
+							<ul class="contact">
+								<li>Tell : 010-1234-5678</li>
+								<li>Email : 0381kdh@naver.com</a></li>
+							</ul>
+						</section>
+
+					<!-- Footer -->
+						<footer id="footer">
+							<p>&copy; Kim_Do_hyeong</p>
+						</footer>
+
+				</div>
+			</div>
+
+	</div>
+</body>
+</html>

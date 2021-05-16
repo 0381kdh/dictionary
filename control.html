@@ -1,0 +1,161 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>제어문</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="css/main.css" />
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Main -->
+					<div id="main">
+						<div class="inner">
+
+							<!-- Header -->
+								<header id="header">
+									<a href="index.html" class="logo">C언어 문법 및 단어 사전</a>
+									
+								</header>
+
+							<!-- Content -->
+								<section>
+									<header class="main">
+										<h1>제어문</h1>
+									</header>
+									
+									<p>C 프로그램은 절차적 프로그램(procedural program) 또는 명령형 프로그램(Imperative program)에 속합니다.
+									<br>C 프로그램에는 수많은 명령문이 포함되어 있으며, 이 명령문은 처음부터 끝까지 순서대로 실행됩니다.
+									<br>따라서 원하는 결과를 얻기 위해서는 프로그램의 이러한 순차적인 흐름을 제어해야만 합니다.
+										
+										
+									<br><br>이때 사용하는 명령문을 제어문이라고 하며, 이러한 제어문에는 조건문, 반복문 등이 있습니다.
+									<br>이러한 제어문에 속하는 명령문들은 중괄호({})로 둘러싸여 있으며, 이러한 중괄호 영역을 블록(block)이라고 합니다.
+											
+									<br><br>
+									</p>
+
+									<hr class="major" />
+	
+									<br><br>
+									<h2>조건문</h2>
+									<br>
+									<p>조건문은 주어진 조건식의 결과에 따라 별도의 명령을 수행하도록 제어하는 명령문입니다.
+									<br>조건문 중에서도 가장 기본이 되는 명령문은 바로 if 문입니다.
+											
+											 
+									<br><br>C언어에서 사용하는 대표적인 조건문의 형태는 다음과 같습니다.
+											
+									<br><br>1. if 문
+									<br>&nbsp;&nbsp;&nbsp;if 문은 조건식의 결과가 참(true)이면 주어진 명령문을 실행하며, 거짓(false)이면 아무것도 실행하지 않습니다.
+									<br>
+
+									<br>2. if / else 문
+									<br>&nbsp;&nbsp;&nbsp;if 문과 함께 사용하는 else 문은 if 문과는 반대로 주어진 조건식의 결과가 거짓(false)이면 주어진 명령문을 실행합니다.
+									<br>
+									
+									<br>3. if / else if / else 문
+									<br>&nbsp;&nbsp;&nbsp;else if 문은 if 문처럼 조건식을 가질 수 있기 때문에 중첩된 if 문을 좀 더 간결하게 표현할 수 있도록 해줍니다.
+									<br>&nbsp;&nbsp;&nbsp;하나의 조건문 안에서 if 문과 else 문은 단 한 번만 사용될 수 있습니다.
+									<br>&nbsp;&nbsp;&nbsp;하지만 else if 문은 여러 번 사용될 수 있어서 복잡한 조건도 표현할 수 있습니다.
+									<br>
+									
+									<br>4. switch 문
+									<br>&nbsp;&nbsp;&nbsp;switch 문은 if / else 문과 마찬가지로 주어진 조건 값의 결과에 따라 프로그램이 다른 명령을 수행하도록 하는 조건문입니다.
+									<br>&nbsp;&nbsp;&nbsp;이러한 switch 문은 if / else 문보다 가독성이 더 좋으며, 컴파일러가 최적화를 쉽게 할 수 있어 속도 또한 빠른 편입니다.
+									<br>
+									<br>&nbsp;&nbsp;&nbsp;하지만 switch 문의 조건 값으로는 int형으로 승격할 수 있는(integer promotion) 값만이 사용될 수 있습니다.
+									<br>&nbsp;&nbsp;&nbsp;즉, C언어에서는 char형, short형, int형 변수나 리터럴과 나중에 배우게 될 열거체까지 사용할 수 있습니다.
+									<br>&nbsp;&nbsp;&nbsp;따라서 if / else 문보다는 사용할 수 있는 상황이 적은 편입니다.
+									<br>
+									
+									<br><br>
+									</p>
+	
+									<hr class="major" />
+	
+									<br><br>
+									<h2>반복문</h2>
+									<br>
+									<p>반복문이란 프로그램 내에서 똑같은 명령을 일정 횟수만큼 반복하여 수행하도록 제어하는 명령문입니다.
+									<br>프로그램이 처리하는 대부분의 코드는 반복적인 형태가 많으므로, 가장 많이 사용되는 제어문 중 하나입니다.
+											
+											 
+									<br><br>C언어에서 사용되는 대표적인 반복문의 형태는 다음과 같습니다.
+											
+									<br><br>1. while 문
+									<br>&nbsp;&nbsp;&nbsp;while 문은 특정 조건을 만족할 때까지 계속해서 주어진 명령문을 반복 실행합니다.
+									<br>
+									
+									<br>2. do / while 문
+									<br>&nbsp;&nbsp;&nbsp;while 문은 루프에 진입하기 전에 먼저 조건식부터 검사합니다.
+									<br>&nbsp;&nbsp;&nbsp;하지만 do / while 문은 먼저 루프를 한 번 실행한 후에 조건식을 검사합니다.
+									<br>&nbsp;&nbsp;&nbsp;즉, do / while 문은 조건식의 결과와 상관없이 무조건 한 번은 루프를 실행합니다.
+									<br>
+									
+									<br>3. for 문
+									<br>&nbsp;&nbsp;&nbsp;for 문은 while 문과는 달리 자체적으로 초기식, 조건식, 증감식을 모두 포함하고 있는 반복문입니다.
+									<br>&nbsp;&nbsp;&nbsp;따라서 while 문보다는 좀 더 간결하게 반복문을 표현할 수 있습니다.
+									<br>
+									
+									<br><br>
+									</p>
+
+									<hr class="major" />
+									
+								</section>
+						</div>
+					</div>
+
+				<!-- Sidebar -->
+				<div id="sidebar">
+					<div class="inner">
+
+						<!-- Search -->
+							<section id="search" class="alt">
+								<form method="post" action="#">
+									<input type="text" name="query" id="query" placeholder="Search" />
+								</form>
+							</section>
+
+						<!-- Menu -->
+						<nav id="menu">
+							<header class="major">
+								<h2>메뉴</h2>
+							</header>
+							<ul>
+								<li><a href="index.html">홈</a></li>
+								<li><a href="variable.html">변수</a></li>
+								<li><a href="operator.html">연산자</a></li>
+								<li><a href="control.html">제어문</a></li>
+								<li><a href="function.html">함수</a></li>
+								<li><a href="string.html">문자열</a></li>
+							</ul>
+						</nav>
+
+					<!-- Section -->
+						<section>
+							<header class="major">
+								<h2>개발자 연락처</h2>
+							</header>
+							<ul class="contact">
+								<li>Tell : 010-1234-5678</li>
+								<li>Email : 0381kdh@naver.com</a></li>
+							</ul>
+						</section>
+
+					<!-- Footer -->
+						<footer id="footer">
+							<p>&copy; Kim_Do_hyeong</p>
+						</footer>
+
+				</div>
+			</div>
+
+	</div>
+</body>
+</html>
